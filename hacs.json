@@ -1,0 +1,5 @@
+{
+  "name": "lich-dam-gio",
+  "homeassistant": "0.110.0b0",
+  "persistent_directory": "codes"
+}
