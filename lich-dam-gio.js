@@ -6,10 +6,10 @@
 class LichDamGio extends HTMLElement {
 set hass(hass) {
 if (!this.content) {
-const card = document.createElement(‘ha-card’);
-card.header = ‘’;
-this.content = document.createElement(‘div’);
-this.content.style.padding = ‘0px’;
+const card = document.createElement('ha-card');
+card.header = 'Am Lich';
+this.content = document.createElement('div');
+this.content.style.padding = '0px';
 card.appendChild(this.content);
 this.appendChild(card);
 }
@@ -165,9 +165,9 @@ this.content.innerHTML = `
 `;
 }
 
-setConfig(config) { }
+setConfig(config) { this.config = config}
 // The height of your card. Home Assistant uses this to automatically
 // distribute all cards over the available columns.
 getCardSize() { return 4; }
 }
-customElements.define(‘lich-dam-gio’, LichDamGio);
+customElements.define('lich-dam-gio', LichDamGio);
