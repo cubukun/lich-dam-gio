@@ -165,7 +165,7 @@ this.content.innerHTML = `
 `;
 }
 
-setConfig(config) { this.config = config}
+setConfig(config) {}
 // The height of your card. Home Assistant uses this to automatically
 // distribute all cards over the available columns.
 getCardSize() { return 4; }
