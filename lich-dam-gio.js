@@ -142,8 +142,8 @@ function getGioHoangDao(jd) {
 lichgio = getNgayGio(); holidaylunar = checkHolidayLunar(ld, lm);
 if ( holidaylunar != "") { holiday = '<div class="b01"><ho>' + holidaylunar + '</ho></div>'; }
 vismm = "Tháng " + vimm[mm]; villm = "Tháng " + vimm[lm - 1]; namAL = can [(ly - 1) % 10] + ' ' + chi [(ly + 59) % 12]; camchithang += can[(lyyyy*12+lm+3) % 10] + " " + chi[(lm+1)%12]; giohoangdao = getGioHoangDao(jd);
-
-this.content.innerHTML = `
+this.content.innerHTML = '';
+this.content.innerHTML += `
 <div class="container">
 	<div class="b01"><cot><ti>Dương Lịch</ti><ngay>${dd}</ngay><thang>${vismm}</thang><nam>${yyyy}</nam></cot><cot><ti>Âm Lịch</ti><ngay>${ld}</ngay><thang>${villm} <ta>(${camchithang})<ta></thang><nam>${chinam}Năm ${namAL}</nam></cot></div>
 	${holiday}
